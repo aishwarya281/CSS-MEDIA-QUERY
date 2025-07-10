@@ -1,0 +1,76 @@
+/* === Base Styles === */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+}
+
+header {
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.highlight {
+  color: #0077ff; /* Default blue */
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.left, .right {
+  flex: 1;
+  padding: 1rem;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* === Media Queries === */
+
+/* Tablet View */
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  .highlight {
+    color: #ff6600 !important; /* Orange highlight on tablets */
+  }
+}
+
+/* Mobile View */
+@media screen and (max-width: 480px) {
+  header {
+    font-size: 1.2rem;
+  }
+
+  .highlight {
+    color: #e60073 !important; /* Pink highlight on mobile */
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  .left, .right {
+    font-size: 0.95rem;
+    padding: 0.75rem;
+  }
+
+  footer {
+    font-size: 0.85rem;
+  }
+}
